@@ -94,7 +94,7 @@ class DbModel extends CI_Model {
     				$temp['error_message_heading'] = "Invalid Database";
     				$temp['error_message'] = "The database: <b>".$db->dbapp_databases_database."</b> does not exist on this server. Please contact support at <a href='mailto:".$this->config->item('support_email')."'>".$this->config->item('support_email')."</a>";
     							
-    				die( $this->load->view('shared/alert', array('data'=>$temp), true) );
+    				die( $this->load->view('backoffice/shared/alert', array('data'=>$temp), true) );
     			
     			}
     	

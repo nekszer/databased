@@ -13,7 +13,7 @@ class RevisionModel extends CI_Model {
         
         if(!$this->ion_auth->logged_in()) {
         	
-        	redirect('/login');
+        	redirect('backoffice/login');
         
         }
         

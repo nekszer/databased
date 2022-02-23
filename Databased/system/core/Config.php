@@ -285,7 +285,7 @@ class CI_Config {
 	// -------------------------------------------------------------
 
 	/**
-	 * Build URI string for use in Config::site_url() and Config::base_url()
+	 * Build URI string for use in Config::site_url() and Config::base_url('backoffice')
 	 *
 	 * @access protected
 	 * @param  $uri
