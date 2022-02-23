@@ -19,7 +19,7 @@
         			</a>
       			</h4>
     		</div>
-    		<div id="collapse_<?php echo $field;?>" class="panel-collapse collapse">
+    		<div id="collapse_<?php echo $field;?>" class="panel-collapse">
       			<div class="panel-body">
       			
       				<?php if( isset($value['additional_data']['index']) && $value['additional_data']['index'] != 'none' ):?>

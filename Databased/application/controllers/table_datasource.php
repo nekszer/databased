@@ -54,7 +54,7 @@ class Table_datasource extends CI_Controller {
 		}
 			
 		$config['database'] = $db;
-		$config['dbdriver'] = 'mysql';
+		$config['dbdriver'] = 'mysqli';
 		$config['dbprefix'] = '';
 		$config['pconnect'] = FALSE;
 		$config['db_debug'] = TRUE;
@@ -97,8 +97,12 @@ class Table_datasource extends CI_Controller {
 		
 		$this->datatables->set_DB($this->theDB);
 		$this->datatables->from($table);
-		
-		
+
+		$params = $this->input->get();
+
+		foreach ($params as $key => $value){
+			$this->datatables->where("$table.$key", $value);
+		}
 		
 		if($this->session->userdata($db.".".$table)) {
 		

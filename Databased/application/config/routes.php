@@ -74,6 +74,9 @@ $route['db/importCsv/(.+?)'] = "db/importCsv/$1";
 $route['db/(.+?)/(.+?)'] = 'db/index/$1/$2';
 $route['db/(.+?)'] = 'db/index/$1';
 
+$route['crud/(.+?)/(.+?)'] = 'crud/index/$1/$2';
+$route['crud/(.+?)'] = 'crud/index/$1';
+
 $route['recordNotes/deleteNote/(.+?)/(.+?)/(.+?)/(.+?)/(.+?)'] = 'recordnotes/deleteNote/$1/$2/$3/$4/$5';
 
 $route['users'] = 'users/index';
