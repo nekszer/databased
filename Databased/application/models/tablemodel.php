@@ -53,7 +53,7 @@ class TableModel extends CI_Model {
     	}
     	
     	$config['database'] = $db;
-    	$config['dbdriver'] = 'mysql';
+    	$config['dbdriver'] = 'mysqli';
     	$config['dbprefix'] = '';
     	$config['pconnect'] = FALSE;
     	$config['db_debug'] = FALSE;
@@ -145,7 +145,7 @@ class TableModel extends CI_Model {
     	}
     		
     	$config['database'] = $db;
-    	$config['dbdriver'] = 'mysql';
+    	$config['dbdriver'] = 'mysqli';
     	$config['dbprefix'] = '';
     	$config['pconnect'] = FALSE;
     	$config['db_debug'] = TRUE;

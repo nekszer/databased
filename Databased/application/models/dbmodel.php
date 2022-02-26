@@ -48,7 +48,7 @@ class DbModel extends CI_Model {
     	}
     		
     	$config['database'] = $db;
-    	$config['dbdriver'] = 'mysql';
+    	$config['dbdriver'] = 'mysqli';
     	$config['dbprefix'] = '';
     	$config['pconnect'] = FALSE;
     	$config['db_debug'] = FALSE;
@@ -133,7 +133,7 @@ class DbModel extends CI_Model {
     	    	
     	foreach( $dbs as $db ) {    		
     	
-    		if( $db->Database != $this->db->database && $db->Database != 'information_schema' && $db->Database != 'mysql' && $db->Database != 'performance_schema' ) {//reserved databases
+    		if( $db->Database != $this->db->database && $db->Database != 'information_schema' && $db->Database != 'mysqli' && $db->Database != 'performance_schema' ) {//reserved databases
     		
     			$temp = array();
     			
@@ -407,7 +407,7 @@ class DbModel extends CI_Model {
     	$config['username'] = $this->db->username;
     	$config['password'] = $this->db->password;
     	$config['database'] = "information_schema";
-    	$config['dbdriver'] = 'mysql';
+    	$config['dbdriver'] = 'mysqli';
     	$config['dbprefix'] = '';
     	$config['pconnect'] = FALSE;
     	$config['db_debug'] = TRUE;
@@ -595,7 +595,7 @@ class DbModel extends CI_Model {
     	$config['username'] = $this->db->username;
     	$config['password'] = $this->db->password;
     	$config['database'] = $db;
-    	$config['dbdriver'] = 'mysql';
+    	$config['dbdriver'] = 'mysqli';
     	$config['dbprefix'] = '';
     	$config['pconnect'] = FALSE;
     	$config['db_debug'] = TRUE;
